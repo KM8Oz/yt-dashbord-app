@@ -8,7 +8,7 @@
   },
   "package": {
       "productName": "YTVIEWS",
-      "version": "0.1.6"
+      "version": "0.1.7"
   },
   "tauri": {
       "allowlist": {
@@ -16,6 +16,9 @@
           "fs": {
               "all": true,
               "scope": ["**"]
+          },
+          "notification": {
+            "all": true 
           }
       },
       "bundle": {
@@ -34,12 +37,12 @@
               "icons/icon.ico",
               "icons/icon.png"
           ],
-          "identifier": "dev.kmoz.YTVIEWS-alpha",
+          "identifier": "dev.kmoz.ytviewsapp",
           "longDescription": "youtube bot dashbord",
           "macOS": {
-              "license": "./LICENCE",
-              "entitlements": "./entitlements.plist",
-              "exceptionDomain": "kmoz.dev",
+              "license": "LICENCE",
+              "entitlements": "src-tauri/entitlements.plist",
+              "exceptionDomain": "oldidev.ru",
               "minimumSystemVersion": "10.7",
               "frameworks": [],
               "providerShortName": "Artem Semenov",

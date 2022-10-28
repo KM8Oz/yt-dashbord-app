@@ -1,4 +1,4 @@
-import * as io from "socket.io-client";
+import io from "socket.io-client";
 import { AppStore } from "../store/User";
 import { get_machine_id } from "./machine_id";
 export const IOPublic= io("wss://keyclock.oldidev.ru/public");

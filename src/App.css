@@ -41,12 +41,3 @@ p {
   color: #888;
 }
 
-.draggable {
-  user-select: none;
-}
-input {
-  outline: unset;
-  user-select: all ;
-  -webkit-user-drag: auto;
-  -webkit-user-select: all;
-}

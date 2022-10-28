@@ -23,6 +23,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+.cargo.sh
 certificate-base64.txt
 *.p8
 wincert.csr

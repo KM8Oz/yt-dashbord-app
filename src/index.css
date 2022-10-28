@@ -14,14 +14,7 @@
   -webkit-text-size-adjust: 100%;
   overflow: hidden;
 }
-* {
-  scroll-snap-type: none;
-  -webkit-user-select: none;
-  user-select: none;
-  -webkit-user-drag: none;
-  overscroll-behavior-x: none;
-  overscroll-behavior-y: none;
-}
+
 
 a {
   font-weight: 500;
@@ -76,4 +69,24 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+.draggable {
+  /* user-select: none; */
+}
+* {
+  scroll-snap-type: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  overscroll-behavior-x: none;
+  overscroll-behavior-y: none;
+}
+input {
+  outline: unset;
+  user-select: text;
+  -webkit-user-drag: auto;
+  -ms-user-drag: auto;
+  -webkit-user-select: text;  
+  -ms-user-select: text;
+  user-select: text;
 }

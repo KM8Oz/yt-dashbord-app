@@ -183,9 +183,10 @@ function Login(props: any) {
                         fontFamily: "Arial",
                         fontSize: 17,
                         fontWeight: 600,
-                        textAlign: "center"
+                        textAlign: "center",
+                        color: current.values.secondary_light
                     }}>
-                        TOTP CODE
+                        OTP CODE
                     </p>
                 </div>
             </foreignObject>
@@ -207,7 +208,7 @@ function Login(props: any) {
                     </BtnAction>
                 </div>
             </foreignObject>
-            <foreignObject x="25.8908" y="184.228" width="238" height="40">
+            <foreignObject x="21.8908" y="184.228" width="250" height="40">
                 <div style={{
                     height: "100%",
                     display: "flex",
@@ -221,7 +222,7 @@ function Login(props: any) {
                         width: "96%",
                         borderRadius: 20,
                         textAlign: "center",
-                        fontFamily: "Archivo",
+                        fontFamily: "Inter",
                         fontSize: 19,
                         color: color[1]
                     }} onChange={(ev) => setUserPass(ev.target.value)} onKeyUp={(event) => {
@@ -339,7 +340,7 @@ function Login(props: any) {
                             width: "100%",
                             borderRadius: 20,
                             textAlign: "center",
-                            fontFamily: "Archivo",
+                            fontFamily: "Inter",
                             fontSize: 14,
                             color: color[1]
                         }} onChange={(ev) => setkey(ev.target.value)} />

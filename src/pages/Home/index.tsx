@@ -158,7 +158,7 @@ const TabsMenu = styled.div`
             <SideMenuBody style={style_menu}>
                 {
                     Object.values(settings).map((d, i)=>{
-                        return d.Component({title: d.title, key: i})
+                        return <d.Component title={d.title} key={i} />
                     })
                 }
             </SideMenuBody>

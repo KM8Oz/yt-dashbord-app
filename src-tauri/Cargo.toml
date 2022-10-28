@@ -1,11 +1,11 @@
 [package]
-name = "app"
-version = "0.1.0"
-description = "A Tauri App"
-authors = ["you"]
-license = ""
-repository = ""
-default-run = "app"
+name = "ytviews"
+version = "0.1.7"
+description = "YTVIEWS Dashboard"
+authors = ["@KM8Oz"]
+license = "MIT"
+repository = "https://github.com/KM8Oz/yt-dashbord-app.git"
+default-run = "ytviews"
 edition = "2021"
 rust-version = "1.57"
 
@@ -27,6 +27,9 @@ directories = "4.0.1"
 # by default Tauri runs in production mode
 # when `tauri dev` runs it is executed with `cargo run --no-default-features` if `devPath` is an URL
 default = [ "custom-protocol" ]
-# this feature is used for production builds where `devPath` points to the filesystem
+# this feature is used used for production builds where `devPath` points to the filesystem
 # DO NOT remove this
 custom-protocol = [ "tauri/custom-protocol" ]
+
+[profile.release]
+strip = true  # Automatically strip symbols from the binary.
