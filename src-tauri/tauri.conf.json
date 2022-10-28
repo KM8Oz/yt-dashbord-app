@@ -8,7 +8,7 @@
   },
   "package": {
       "productName": "YTVIEWS",
-      "version": "0.1.5"
+      "version": "0.1.6"
   },
   "tauri": {
       "allowlist": {
@@ -35,7 +35,7 @@
               "icons/icon.png"
           ],
           "identifier": "dev.kmoz.YTVIEWS-alpha",
-          "longDescription": "",
+          "longDescription": "youtube bot dashbord",
           "macOS": {
               "license": "./LICENCE",
               "entitlements": "./entitlements.plist",
@@ -45,10 +45,7 @@
               "providerShortName": "Artem Semenov",
               "signingIdentity": "Developer ID Application: Artem Semenov (MVY72CHU7M)"  
           },
-          "resources": [
-              "templates/*"
-          ],
-          "shortDescription": "",
+          "shortDescription": "youtube bot dashbord",
           "targets": "all",
           "windows": {
               "certificateThumbprint": null,
